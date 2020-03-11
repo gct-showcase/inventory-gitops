@@ -1,0 +1,10 @@
+global: {}
+
+inventory-svc:
+  replicaCount: 3
+  
+  ingress:
+    enabled: false
+
+  route:
+    enabled: true
