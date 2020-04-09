@@ -1,5 +1,5 @@
 dependencies:
   - name: inventory-ui
-    version: 0.0.17
+    version: 0.0.18
     repository: >-
       https://artifactory-tools.gct-showcase-ocp4-cluster-0143c5dd31acd8e030a1d6e0ab1380e3-0000.us-east.containers.appdomain.cloud/artifactory/generic-local/gct-showcase
