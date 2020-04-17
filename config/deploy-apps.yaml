@@ -1,0 +1,120 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-ui-test
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-ui
+    targetRevision: test
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-test
+  syncPolicy:
+    automated: {}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-bff-test
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-bff
+    targetRevision: test
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-test
+  syncPolicy:
+    automated: {}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-svc-test
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-svc
+    targetRevision: test
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-test
+  syncPolicy:
+    automated: {}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-ui-staging
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-ui
+    targetRevision: staging
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-staging
+  syncPolicy:
+    automated: {}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-bff-staging
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-bff
+    targetRevision: staging
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-staging
+  syncPolicy:
+    automated: {}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: inventory-svc-staging
+  namespace: tools
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/gct-showcase/inventory-gitops"
+    path: inventory-svc
+    targetRevision: staging
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: inventory-staging
+  syncPolicy:
+    automated: {}
