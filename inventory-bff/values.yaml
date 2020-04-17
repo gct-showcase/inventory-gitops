@@ -1,7 +1,7 @@
 global: {}
 
 inventory-bff:
-  replicaCount: 3
+  replicaCount: 1
   
   ingress:
     enabled: false
