@@ -1,0 +1,19 @@
+# The url of the gitops repo that contains the applications
+repoUrl: ""
+
+# The name of the project. If left empty then will use 'default'
+project: ""
+
+# Lists the applications that should be created. 
+applicationTargets: {}
+# - targetRevision: ""
+#   targetNamespace: ""
+#   server: ""
+#   applicationNames:
+#   - app1
+#   - app2
+
+# flag indicating that roles should be created for the 
+# argocd-application-controller service account in the 
+# target namespaces
+controllerRbac: true
