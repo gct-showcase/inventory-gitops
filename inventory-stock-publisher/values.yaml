@@ -1,0 +1,10 @@
+global: {}
+
+inventory-stock-publisher:
+  replicaCount: 1
+  
+  ingress:
+    enabled: false
+
+  route:
+    enabled: true
