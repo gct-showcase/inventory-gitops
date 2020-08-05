@@ -1,0 +1,49 @@
+global: {}
+
+argocd-config:
+  repoUrl: https://github.com/gct-showcase/inventory-gitops.git
+
+  controllerRbac: false
+
+  project: inventory
+
+  applicationTargets:
+    - targetRevision: dev
+      targetNamespace: inventory-ci
+      applications:
+        - name: common
+          type: directory
+        - name: inventory-ui
+          type: directory
+        - name: inventory-bff
+          type: directory
+        - name: inventory-svc
+          type: directory
+    - targetRevision: test
+      targetNamespace: inventory-test
+      applications:
+        - name: inventory-ui
+        - name: inventory-bff
+        - name: inventory-svc
+
+
+
+#  project: inventory
+#
+#  applicationTargets:
+#    - targetRevision: test
+#      targetNamespace: inventory-test
+#      valueFiles:
+#        - values.yaml
+#        - values-test.yaml
+#      applicationNames:
+#        - inventory-ui
+#        - inventory-bff
+#        - inventory-svc
+#    - targetRevision: staging
+#      targetNamespace: inventory-staging
+#      applicationNames:
+#        - inventory-ui
+#        - inventory-bff
+#        - inventory-svc
+
