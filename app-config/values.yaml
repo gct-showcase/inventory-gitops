@@ -8,21 +8,11 @@ argocd-config:
   project: inventory
 
   applicationTargets:
-    - targetRevision: dev
-      targetNamespace: inventory-ci
-      applications:
-        - name: common
-          type: directory
-        - name: inventory-ui
-          type: directory
-        - name: inventory-bff
-          type: directory
-        - name: inventory-svc
-          type: directory
     - targetRevision: test
       targetNamespace: inventory-test
       applications:
         - name: inventory-ui
         - name: inventory-bff
         - name: inventory-svc
+        - name: graphql-demo
 
