@@ -15,4 +15,5 @@ argocd-config:
         - name: inventory-bff
         - name: inventory-svc
         - name: graphql-demo
+        - name: microservice-demo1
 
