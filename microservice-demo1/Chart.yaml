@@ -1,0 +1,4 @@
+apiVersion: v2
+version: 0.1.0
+name: microservice-demo1
+description: Chart to configure ArgoCD with the microservice-demo1 project and its applications
