@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: staging-inventory-svc
+spec:
+  destination:
+    namespace: inventory-staging
+    server: "https://kubernetes.default.svc"
+  project: default
+  source:
+    path: inventory-svc
+    repoURL: https://github.com/gct-showcase/inventory-gitops.git
+    targetRevision: staging
+    helm:
+      valueFiles:
+        - values.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
