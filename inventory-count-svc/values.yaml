@@ -1,0 +1,3 @@
+global: {}
+inventory-count-svc:
+  replicaCount: 1
