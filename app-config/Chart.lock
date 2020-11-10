@@ -1,0 +1,6 @@
+dependencies:
+- name: argocd-config
+  repository: https://ibm-garage-cloud.github.io/toolkit-charts
+  version: 0.13.1
+digest: sha256:d152ea7bf0a94266dc4156ecc924c1a1e19c3cf4a579a8ce66aa589792f44c21
+generated: "2020-08-06T10:43:14.578481-05:00"

@@ -11,7 +11,5 @@ argocd-config:
     - targetRevision: test
       targetNamespace: inventory-test
       applications:
-        - name: inventory-ui
-        - name: inventory-bff
         - name: inventory-svc
 
