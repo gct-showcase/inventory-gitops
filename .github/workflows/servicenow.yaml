@@ -19,4 +19,8 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Create ticket
-        run: curl -X POST "${{ secrets.SERVICE_NOW_HOST }}/sn_chg_rest/change/standard/1" -H "accept: application/json" -H "Content-Type: application/json" -d '{"pullRequestUrl": "${{ github.event.pull_request.url }}"}'
+        run: |
+          URL="${{ secrets.SERVICENOW_HOST }}/sn_chg_rest/change/standard/1"
+          PAYLOAD='{"pullRequestUrl": "${{ github.event.pull_request.url }}"}'
+          
+          curl -X POST $URL -H "accept: application/json" -H "Content-Type: application/json" -d $PAYLOAD
