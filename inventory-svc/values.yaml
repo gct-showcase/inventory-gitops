@@ -1,7 +1,7 @@
 global: {}
 
 inventory-svc:
-  replicaCount: 2
+  replicaCount: 3
   
   ingress:
     enabled: false
