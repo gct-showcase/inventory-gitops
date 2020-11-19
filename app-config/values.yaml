@@ -10,6 +10,7 @@ argocd-config:
   applicationTargets:
     - targetRevision: test
       targetNamespace: inventory-test
+      createNamespace: false
       applications: []
 
 
