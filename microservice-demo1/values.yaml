@@ -1,3 +1,0 @@
-global: {}
-microservice-demo1:
-  replicaCount: 1

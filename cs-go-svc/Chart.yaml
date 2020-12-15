@@ -1,4 +1,0 @@
-apiVersion: v2
-version: 0.1.0
-name: cs-go-svc
-description: Chart to configure ArgoCD with the cs-go-svc project and its applications

@@ -1,4 +1,0 @@
-apiVersion: v2
-version: 0.1.0
-name: graphql-demo
-description: Chart to configure ArgoCD with the graphql-demo project and its applications

@@ -1,3 +1,0 @@
-global: {}
-nodejs-ms-demo:
-  replicaCount: 1

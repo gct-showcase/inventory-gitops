@@ -1,3 +1,0 @@
-global: {}
-graphql-demo:
-  replicaCount: 1
