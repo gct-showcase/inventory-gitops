@@ -1,3 +1,0 @@
-global: {}
-cs-go-svc:
-  replicaCount: 1

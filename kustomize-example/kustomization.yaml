@@ -1,5 +1,0 @@
-commonLabels:
-  app: test
-
-resources:
-  - configmap.yaml
