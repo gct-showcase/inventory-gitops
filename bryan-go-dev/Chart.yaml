@@ -1,0 +1,4 @@
+apiVersion: v2
+version: 0.1.0
+name: bryan-go-dev
+description: Chart to configure ArgoCD with the bryan-go-dev project and its applications
