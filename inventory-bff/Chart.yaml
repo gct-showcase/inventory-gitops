@@ -1,2 +1,4 @@
+apiVersion: v2
 version: 0.1.0
 name: inventory-bff
+description: Chart to configure ArgoCD with the inventory-bff project and its applications
