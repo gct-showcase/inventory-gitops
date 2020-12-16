@@ -1,0 +1,4 @@
+apiVersion: v2
+version: 0.1.0
+name: inventory-management-bff-solution
+description: Chart to configure ArgoCD with the inventory-management-bff-solution project and its applications
