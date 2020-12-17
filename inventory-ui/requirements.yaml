@@ -1,4 +1,4 @@
 dependencies:
   - name: inventory-ui
-    version: 0.0.31
+    version: 0.0.32
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/cntk-showcase
