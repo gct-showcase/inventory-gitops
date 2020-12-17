@@ -1,4 +1,0 @@
-dependencies:
-  - name: inventory-management-ui-solution
-    version: 0.0.5
-    repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/cntk-showcase
