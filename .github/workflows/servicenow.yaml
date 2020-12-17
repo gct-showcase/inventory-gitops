@@ -22,7 +22,7 @@ jobs:
         run: |
           if [[ -z "${{ secrets.SERVICENOW_HOST }}" ]]; then
             echo "SERVICENOW_HOST is not set!"
-            exit 1
+            exit 0
           fi
           
           URL="${{ secrets.SERVICENOW_HOST }}/sn_chg_rest/change/standard/1"
