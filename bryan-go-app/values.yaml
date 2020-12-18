@@ -1,3 +1,0 @@
-global: {}
-bryan-go-app:
-  replicaCount: 1
