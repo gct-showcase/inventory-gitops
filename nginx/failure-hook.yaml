@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: sync-failure-
+  annotations:
+    argocd.argoproj.io/hook: SyncFail
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: sync
+          image: quay.io/ibmgaragecloud/ibmcloud-dev
+          command:
+            - "/bin/echo"
+          args:
+            - "Sync failure: ${DEPLOYMENT}"
+          env:
+            - name: SERVICE_NOW_URL
+              value: ""
+            - name: DEPLOYMENT
+              value: nginx
