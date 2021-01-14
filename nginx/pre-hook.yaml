@@ -3,7 +3,7 @@ kind: Job
 metadata:
   generateName: sync-start-
   annotations:
-    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook: Sync
 spec:
   template:
     spec:
