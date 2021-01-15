@@ -4,7 +4,7 @@ metadata:
   generateName: sync-pre-
   annotations:
     argocd.argoproj.io/hook: Sync
-    argocd.argoproj.io/hook-delete-policy: HookFailed
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
@@ -13,9 +13,9 @@ spec:
         - name: sync
           image: quay.io/ibmgaragecloud/ibmcloud-dev
           command:
-            - "/bin/echo"
+            - "sleep"
           args:
-            - "Sync started: ${DEPLOYMENT}"
+            - "120"
           env:
             - name: SERVICE_NOW_URL
               value: ""
