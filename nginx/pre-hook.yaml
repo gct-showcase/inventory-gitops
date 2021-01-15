@@ -12,9 +12,9 @@ spec:
         - name: sync
           image: quay.io/ibmgaragecloud/ibmcloud-dev
           command:
-            - "sleep"
+            - "/bin/echo"
           args:
-            - "120"
+            - "Sync start: ${DEPLOYMENT}"
           env:
             - name: SERVICE_NOW_URL
               value: ""
