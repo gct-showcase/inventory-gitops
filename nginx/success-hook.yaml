@@ -5,6 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
 spec:
+  ttlSecondsAfterFinished: 600
   template:
     spec:
       restartPolicy: Never

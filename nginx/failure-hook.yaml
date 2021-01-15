@@ -4,8 +4,8 @@ metadata:
   name: sync-failure
   annotations:
     argocd.argoproj.io/hook: SyncFail
-    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
+  ttlSecondsAfterFinished: 600
   template:
     spec:
       restartPolicy: Never
