@@ -14,4 +14,3 @@ argocd-config:
       applications:
        - name: inventory-svc
        - name: inventory-bff
-       - name: inventory-ui
