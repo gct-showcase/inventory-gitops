@@ -4,6 +4,6 @@ metadata:
   name: memcached-operator-catalog
 spec:
   sourceType: grpc
-  image: us.icr.io/cntk-showcase/memcached-operator-catalog:0.0.8
+  image: us.icr.io/cntk-showcase/memcached-operator-catalog:0.0.9
   displayName: Memcached Operator
   publisher: grpc
