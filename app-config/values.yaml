@@ -9,7 +9,8 @@ argocd-config:
 
   applicationTargets:
     - targetRevision: test
-      targetNamespace: inventory-test
+      targetNamespace: inventory-qa
+      server: https://c109-e.us-east.containers.cloud.ibm.com:32456
       createNamespace: false
       applications:
        - name: inventory-svc
