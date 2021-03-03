@@ -1,15 +1,18 @@
 global:
   clusterType: "ocp4"
-  operatorNamespace: "istio-system"
 
 elasticsearch-operator:
   createInstance: false
+  operatorNamespace: "istio-system"
 
 jaeger-operator:
   createInstance: false
+  operatorNamespace: "istio-system"
 
 kiali-operator:
   createInstance: false
+  operatorNamespace: "istio-system"
 
 service-mesh-operator:
   createInstance: false
+  operatorNamespace: "istio-system"

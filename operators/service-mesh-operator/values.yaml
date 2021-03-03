@@ -1,6 +1,6 @@
 global:
   clusterType: "ocp4"
-  operatorNamespace: "istio-system"
 
 service-mesh-operator:
   createInstance: false
+  operatorNamespace: "istio-system"
