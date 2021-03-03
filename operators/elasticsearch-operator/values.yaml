@@ -1,6 +1,6 @@
 global:
   clusterType: "ocp4"
-  operatorNamespace: "istio-system"
 
 elasticsearch-operator:
   createInstance: false
+  operatorNamespace: "istio-system"
