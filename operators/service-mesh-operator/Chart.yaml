@@ -1,0 +1,9 @@
+
+apiVersion: v2
+name: service-mesh-operator
+description: A Helm chart for Kubernetes
+version: 1.0.0
+dependencies:
+  - name: service-mesh-operator
+    version: 0.5.1
+    repository: https://ibm-garage-cloud.github.io/toolkit-charts

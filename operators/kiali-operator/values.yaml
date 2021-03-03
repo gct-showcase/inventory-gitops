@@ -1,0 +1,6 @@
+global:
+  clusterType: "ocp4"
+  operatorNamespace: "istio-system"
+
+kiali-operator:
+  createInstance: false

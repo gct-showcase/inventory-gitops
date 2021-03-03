@@ -1,0 +1,8 @@
+apiVersion: v2
+name: kiali-operator
+description: A Helm chart for Kubernetes
+version: 1.0.0
+dependencies:
+  - name: kiali-operator
+    version: 0.3.0
+    repository: https://ibm-garage-cloud.github.io/toolkit-charts

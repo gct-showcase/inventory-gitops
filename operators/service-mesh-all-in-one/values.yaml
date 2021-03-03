@@ -1,0 +1,15 @@
+global:
+  clusterType: "ocp4"
+  operatorNamespace: "istio-system"
+
+elasticsearch-operator:
+  createInstance: false
+
+jaeger-operator:
+  createInstance: false
+
+kiali-operator:
+  createInstance: false
+
+service-mesh-operator:
+  createInstance: false

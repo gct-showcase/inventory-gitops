@@ -1,0 +1,9 @@
+apiVersion: v2
+name: jaeger-operator
+description: A Helm chart to install Jaeger via the operator
+version: 1.0.0
+dependencies:
+  - name: jaeger-operator
+    version: 0.6.0
+    repository: https://ibm-garage-cloud.github.io/toolkit-charts
+

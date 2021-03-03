@@ -1,0 +1,9 @@
+apiVersion: v2
+name: elasticsearch-operator
+description: A Helm chart for Kubernetes
+version: 1.0.0
+dependencies:
+  - name: elasticsearch-operator
+    version: 0.3.0
+    repository: https://ibm-garage-cloud.github.io/toolkit-charts
+
