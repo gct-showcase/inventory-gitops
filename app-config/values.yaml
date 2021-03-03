@@ -15,3 +15,11 @@ argocd-config:
        - name: inventory-svc
        - name: inventory-bff
        - name: inventory-ui
+#    - targetRevision: prod
+#      targetNamespace: inventory-prod
+#      server: https://c100-e.us-east.containers.cloud.ibm.com:30612
+#      createNamespace: false
+#      applications:
+#       - name: inventory-svc
+#       - name: inventory-bff
+#       - name: inventory-ui
