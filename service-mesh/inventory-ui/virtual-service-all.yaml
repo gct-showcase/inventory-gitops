@@ -6,7 +6,7 @@ spec:
   hosts:
   - "inventory-ui"
   http:
-    route:
+  - route:
     - destination:
         host: inventory-ui
 ---
@@ -18,7 +18,7 @@ spec:
   hosts:
   - "inventory-bff"
   http:
-    route:
+  - route:
     - destination:
         host: inventory-bff
 ---
@@ -30,6 +30,6 @@ spec:
   hosts:
   - "inventory-svc"
   http:
-    route:
+  - route:
     - destination:
         host: inventory-svc
