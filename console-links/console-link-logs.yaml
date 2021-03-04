@@ -1,0 +1,17 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: toolkit-service-mesh-logs
+  labels:
+    app: service-mesh-logs
+    app.kubernetes.io/component: tools
+    app.kubernetes.io/instance: service-mesh-logs
+    app.kubernetes.io/name: service-mesh-logs
+    group: catalyst-tools
+    grouping: garage-cloud-native-toolkit
+spec:
+  applicationMenu:
+    section: Operations
+  href: https://app.eu-gb.logging.cloud.ibm.com/ext/ibm-sso/2fcbe0fb48?tags=cntk-showcase-prod
+  location: ApplicationMenu
+  text: Logs

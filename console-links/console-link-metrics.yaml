@@ -1,0 +1,17 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: toolkit-service-mesh-metrics
+  labels:
+    app: service-mesh-metrics
+    app.kubernetes.io/component: tools
+    app.kubernetes.io/instance: service-mesh-metrics
+    app.kubernetes.io/name: service-mesh-metrics
+    group: catalyst-tools
+    grouping: garage-cloud-native-toolkit
+spec:
+  applicationMenu:
+    section: Operations
+  href: https://us-south.monitoring.cloud.ibm.com/#/dashboard-template/view.service.kubernetesGoldenSignals?skip-welcome=true&scope=kubernetes.cluster.name%20%3D%20%22cntk-showcase-prod%22&last=3600
+  location: ApplicationMenu
+  text: Metrics
