@@ -1,8 +1,7 @@
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
-  annotations:
-    name: toolkit-service-mesh-jaeger
+  name: toolkit-service-mesh-jaeger
   labels:
     app: service-mesh-jaeger
     app.kubernetes.io/component: tools
