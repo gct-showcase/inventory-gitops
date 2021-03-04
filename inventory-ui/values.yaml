@@ -2,6 +2,6 @@ global: {}
 inventory-ui:
   replicaCount: 1
   route:
-    enabled: false
+    enabled: true
   featureToggles:
     ADD_ITEM: false
