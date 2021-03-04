@@ -4,4 +4,4 @@ inventory-ui:
   route:
     enabled: true
   featureToggles:
-    ADD_ITEM: true
+    ADD_ITEM: false
