@@ -1,0 +1,18 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  annotations:
+    name: toolkit-service-mesh-kiali
+  labels:
+    app: service-mesh-kiali
+    app.kubernetes.io/component: tools
+    app.kubernetes.io/instance: service-mesh-kiali
+    app.kubernetes.io/name: service-mesh-kiali
+    group: catalyst-tools
+    grouping: garage-cloud-native-toolkit
+spec:
+  applicationMenu:
+    section: Cloud-Native Toolkit
+  href: https://kiali-istio-system.cntk-showcase-dev-2ab66b053c14936810608de9a1deac9c-0000.us-east.containers.appdomain.cloud/console/graph/namespaces/?edges=noEdgeLabels&graphType=versionedApp&namespaces=inventory-staging&unusedNodes=false&operationNodes=false&injectServiceNodes=true&duration=60&refresh=15000&layout=dagre
+  location: ApplicationMenu
+  text: kiali
