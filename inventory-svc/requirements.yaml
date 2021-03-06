@@ -1,4 +1,4 @@
 dependencies:
   - name: inventory-svc
-    version: 0.0.4
+    version: 0.0.5
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/cntk-showcase-gsi
