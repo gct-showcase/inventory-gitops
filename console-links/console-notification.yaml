@@ -8,5 +8,5 @@ metadata:
 spec:
   text: Prod
   location: BannerTop ##Other options are BannerBottom, BannerTopBottom
-link:
+  color: '#fff'
   backgroundColor: green
