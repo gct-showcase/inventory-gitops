@@ -7,4 +7,6 @@ metadata:
     grouping: garage-cloud-native-toolkit
 spec:
   text: Prod
+  location: BannerTop ##Other options are BannerBottom, BannerTopBottom
+text:
   backgroundColor: green
