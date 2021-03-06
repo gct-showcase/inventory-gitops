@@ -1,4 +1,4 @@
 dependencies:
   - name: inventory-bff
-    version: 0.0.3
+    version: 0.0.4
     repository: http://artifactory-artifactory.tools:8082/artifactory/generic-local/cntk-showcase-gsi
