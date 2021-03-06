@@ -1,3 +1,5 @@
 global: {}
 inventory-bff:
   replicaCount: 1
+  connectsTo:
+    - prod-inventory-svc
