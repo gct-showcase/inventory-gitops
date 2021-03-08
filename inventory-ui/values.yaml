@@ -1,7 +1,5 @@
 global: {}
 inventory-ui:
   replicaCount: 1
-  connectsTo:
-    - prod-inventory-svc
   featureToggles:
     ADD_ITEM: false
