@@ -2,4 +2,4 @@ global: {}
 inventory-ui:
   replicaCount: 1
   featureToggles:
-    ADD_ITEM: false
+    ADD_ITEM: true
